@@ -1552,7 +1552,8 @@ img:hover {
   top: 0;
   left: -400px;
   z-index: 10;
-  overflow-y: auto;
+  overflow-y: scroll;
+  overflow-x: auto;
   padding: 1rem 0 2rem 0.5rem;
   width: 400px;
   height: 100%;
@@ -1689,29 +1690,37 @@ img:hover {
 #sidebar .sidebar-toc ol,
 #sidebar .sidebar-toc li {
   list-style: none;
+  overflow: auto;
 }
 #sidebar .sidebar-toc ol {
   margin-top: 0.2rem;
   padding-left: 0.4rem;
+  overflow: auto;
 }
 #sidebar .sidebar-toc__title {
   padding-right: 0.5rem;
   text-align: center;
   font-size: 18px;
 }
+#sidebar .sidebar-toc .toc-child {
+  display: block;
+  overflow: auto;
+}
 #sidebar .sidebar-toc .toc-item {
   display: block;
+  overflow: auto;
 }
 #sidebar .sidebar-toc .toc-text {
-  overflow: hidden;
+  display: block;
+  overflow: auto;
 }
 #sidebar .sidebar-toc .toc-link {
   display: block;
   padding-left: 0.2rem;
-  border-right: 3px solid transparent;
+/*border-right: 3px solid transparent*/
   text-decoration: none;
   font-size: 14px;
-  overflow: hidden;
+  overflow: auto;
   transition: all 0.2s ease-in-out;
 }
 #sidebar .sidebar-toc .toc-link.active {
