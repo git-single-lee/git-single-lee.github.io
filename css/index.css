@@ -1687,6 +1687,10 @@ img:hover {
   background: #fff;
   content: "";
 }
+#sidebar .sidebar-toc {
+  display: block;
+  overflow: hidden;
+}
 #sidebar .sidebar-toc ol,
 #sidebar .sidebar-toc li {
   list-style: none;
