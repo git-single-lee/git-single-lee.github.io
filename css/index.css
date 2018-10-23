@@ -19,7 +19,7 @@ body {
   line-height: 2;
 }
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
   height: 8px;
 }
 *::-webkit-scrollbar-thumb {
@@ -689,7 +689,7 @@ footer {
   margin-left: 0.6rem;
   padding-bottom: 0.3rem;
   text-shadow: 0.05rem 0.05rem 0.1rem rgba(0,0,0,0.3);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   cursor: pointer;
 }
 #page-header .site-page::after {
@@ -1552,8 +1552,7 @@ img:hover {
   top: 0;
   left: -400px;
   z-index: 10;
-  overflow-y: scroll;
-  overflow-x: auto;
+  overflow: scroll;
   padding: 1rem 0 2rem 0.5rem;
   width: 400px;
   height: 100%;
@@ -1687,19 +1686,14 @@ img:hover {
   background: #fff;
   content: "";
 }
-#sidebar .sidebar-toc {
-  display: block;
-  overflow: hidden;
-}
 #sidebar .sidebar-toc ol,
 #sidebar .sidebar-toc li {
   list-style: none;
-  overflow: auto;
+  overflow: hidden;
 }
 #sidebar .sidebar-toc ol {
   margin-top: 0.2rem;
   padding-left: 0.4rem;
-  overflow: auto;
 }
 #sidebar .sidebar-toc__title {
   padding-right: 0.5rem;
@@ -1708,15 +1702,14 @@ img:hover {
 }
 #sidebar .sidebar-toc .toc-child {
   display: block;
-  overflow: auto;
 }
 #sidebar .sidebar-toc .toc-item {
   display: block;
-  overflow: auto;
 }
 #sidebar .sidebar-toc .toc-text {
   display: block;
-  overflow: auto;
+  overflow: hidden;
+  white-space: nowrap;
 }
 #sidebar .sidebar-toc .toc-link {
   display: block;
