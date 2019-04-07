@@ -1,314 +1,58 @@
-.recent-post-item {
-  margin: 1.6rem 0 2rem;
-}
-.recent-post-item .content {
-  margin-top: 0.5rem;
-}
-.recent-post-item .content p {
-  word-break: break-word;
-}
-.recent-post-item .content iframe {
-  width: $content-width;
-  height: $iframe-height;
-}
-.recent-post-item .content ol,
-.recent-post-item .content ul {
-  margin-top: 0.4rem;
-  padding: 0 0 0 0.8rem;
-  list-style: none;
-  counter-reset: li;
-}
-.recent-post-item .content ol p,
-.recent-post-item .content ul p {
-  margin: 0;
-}
-.recent-post-item .content ol ol,
-.recent-post-item .content ul ol,
-.recent-post-item .content ol ul,
-.recent-post-item .content ul ul {
-  padding-left: 0.5rem;
-}
-.recent-post-item .content ol li,
-.recent-post-item .content ul li {
-  position: relative;
-  margin: 0.2rem 0;
-  padding: 0.1rem 0.5rem 0.1rem 1.5rem;
-}
-.recent-post-item .content ol li:hover:before,
-.recent-post-item .content ul li:hover:before {
-  transform: rotate(360deg);
-}
-.recent-post-item .content ol li:before,
-.recent-post-item .content ul li:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: $light-blue;
-  color: $white;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.recent-post-item .content ol li:before {
-  margin-top: 0.2rem;
-  width: 1.2rem;
-  height: 1.2rem;
-  border-radius: 0.6rem;
-  content: counter(li);
-  counter-increment: li;
-  text-align: center;
-  font-size: 0.6rem;
-  line-height: 1.2rem;
-}
-.recent-post-item .content ul li:hover:before {
-  border-color: $ruby;
-}
-.recent-post-item .content ul li:before {
-  top: 10px;
-  margin-left: 0.45rem;
-  width: 0.3rem;
-  height: 0.3rem;
-  border: 0.15rem solid $light-blue;
-  border-radius: 0.3rem;
-  background: $white;
-  content: "";
-  line-height: 0.3rem;
-}
-.recent-post-item .article-type {
-  margin-left: 0.3rem;
-  color: $grey;
-}
-.recent-post-item .article-meta {
-  color: $grey;
-}
-.recent-post-item .article-meta .sticky {
-  color: $theme-button-hover-color;
-}
-.recent-post-item .article-meta i {
-  margin: 0 0.2rem 0 0.3rem;
-}
-.recent-post-item .article-meta__separator {
-  margin-left: 0.3rem;
-}
-.recent-post-item .article-meta .fa-angle-right,
-.recent-post-item .article-meta__link {
-  margin: 0 0 0 0.3rem;
-}
-.recent-post-item time {
-  color: $grey;
-}
-.recent-post-item .more {
-  display: inline-block;
-  padding: 0 0.6rem;
-  height: 1.6rem;
-  background: $light-blue;
-  color: $white;
-  text-align: center;
-  text-decoration: none;
-  line-height: 1.6rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-.recent-post-item .more:hover {
-  background: $ruby;
-}
-.recent-post-item .article-title {
-  display: block;
-  margin-bottom: 0.3rem;
-  border-bottom: 1px solid $light-grey;
-  color: $black;
-  text-decoration: none;
-  font-size: 1.4rem;
-  cursor: pointer;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-.recent-post-item .article-title:hover {
-  border-bottom: 1px solid $light-blue;
-  color: $light-blue;
-}
-.tag-cloud {
-  padding: 4.5rem 0 7rem;
-  text-align: center;
-}
-.tag-cloud a {
-  display: inline-block;
-  margin: 0 0.4rem;
-  text-decoration: none;
-  cursor: pointer;
-}
-.tag-cloud a:hover {
-  color: $ruby !important;
-}
-.tag-cloud__title {
-  font-size: 1.8rem;
-}
-#tag,
-#category,
-#archive {
-  padding: 3rem 0 3rem;
-}
-.article-sort {
-  padding-left: 1rem;
-  border-left: 2px solid $pale-blue;
-}
-.article-sort-title {
-  position: relative;
-  padding-bottom: 1.2rem;
-  padding-left: 1rem;
-  font-size: 1.2rem;
-  line-height: 1;
-}
-.article-sort-title:hover:before {
-  border-color: $ruby;
-}
-.article-sort-title:before {
-  position: absolute;
-  top: 0.25rem;
-  left: calc(-0.5rem + 1px);
-  z-index: 1;
-  width: 0.5rem;
-  height: 0.5rem;
-  border: 0.25rem solid $light-blue;
-  border-radius: 0.5rem;
-  background: $white;
-  content: "";
-  line-height: 0.5rem;
-  transition: all 0.2s ease-in-out;
-}
-.article-sort-title:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 0;
-  width: 0.1rem;
-  height: 1.3rem;
-  background: $pale-blue;
-  content: "";
-}
-.article-sort-item {
-  position: relative;
-  margin-bottom: 1rem;
-  transition: all 0.2s ease-in-out;
-}
-.article-sort-item:hover:before {
-  border-color: $ruby;
-}
-.article-sort-item:before {
-  position: absolute;
-  top: 0.48rem;
-  left: calc(-1rem - 7px);
-  width: 0.3rem;
-  height: 0.3rem;
-  border: 0.15rem solid $light-blue;
-  border-radius: 0.3rem;
-  background: $white;
-  content: "";
-  line-height: 0.3rem;
-  transition: all 0.2s ease-in-out;
-}
-.article-sort-item.year {
-  font-size: 1rem;
-}
-.article-sort-item.year:hover:before {
-  border-color: $light-blue;
-}
-.article-sort-item.year:before {
-  top: 0.7rem;
-  border-color: $ruby;
-}
-.article-sort-item__time {
-  position: absolute;
-  top: 0.1rem;
-  color: $a-link-color;
-}
-.article-sort-item__title {
-  display: block;
-  margin-left: 5rem;
-  color: $font-black;
-  text-decoration: none;
-  font-size: 0.8rem;
-  cursor: pointer;
-}
-.category-lists {
-  padding: 3rem 0 3rem;
-}
-.category-lists .category__title {
-  text-align: center;
-  font-size: 1.8rem;
-}
-.category-list a {
-  color: $font-black;
-  text-decoration: none;
-  cursor: pointer;
-}
-.category-list .category-list-count {
-  margin-left: 0.4rem;
-  color: $a-link-color;
-}
-.category-list .category-list-count:before {
-  content: "(";
-}
-.category-list .category-list-count:after {
-  content: ")";
-}
-.gallery-item {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  margin: 0.4rem;
-  width: 6rem;
-  height: 6rem;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-.gallery-item__title {
-  position: absolute;
-  overflow: hidden;
-  padding: 0 0.4rem;
-  width: 100%;
-  height: 1.5rem;
-  background: rgba(0,0,0,0.5);
-  color: $pale-blue;
-  text-align: center;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  line-height: 1.5rem;
-  transition: 0.2s ease-in-out;
-  transform: translate3d(0, 6rem, 0);
-}
-.gallery-item:hover .gallery-item__title {
-  transform: translate3d(0, 4.5rem, 0);
-}
-@media screen and (max-width: $sm) {
-  .recent-post-item .article-title {
-    font-size: 1rem;
+<!DOCTYPE html><html lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="不熬夜真的不行。"><meta name="keywords" content=""><meta name="author" content="Coolqi.Li,undefined"><meta name="copyright" content="Coolqi.Li"><title>关于 | Coolqi`s Blog</title><link rel="shortcut icon" href="/img/favicon.ico"><link rel="stylesheet" href="/css/index.css?version=1.5.6"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css?version=1.5.6"><link rel="dns-prefetch" href="https://cdn.staticfile.org"><link rel="dns-prefetch" href="https://cdn.bootcss.com"><link rel="dns-prefetch" href="https://creativecommons.org"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css"><script src="https://cdn.jsdelivr.net/gh/upupming/gitalk@36368e5dffd049e956cdbbd751ff96c28d8255cf/dist/gitalk.min.js"></script><script src="https://cdn.jsdelivr.net/npm/blueimp-md5@2.10.0/js/md5.min.js"></script><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
   }
-  .recent-post-item .article-meta.tags {
-    display: none;
+} </script></head><body><canvas class="fireworks"></canvas><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Coolqi.Li</div><div class="author-info__description text-center">“你好，我是李帅奇，Android 系统工程师，MineCraft 忠实玩家，设计和绘画爱好者，缺妹纸晚期患者，熬夜星人。”</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">64</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">14</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">15</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">Links</div><a class="author-info-links__name text-center" href="https://developer.android.google.cn/">AndroidDeveloper</a><a class="author-info-links__name text-center" href="http://www.android-studio.org/">AndroidStudio</a><a class="author-info-links__name text-center" href="https://www.jianshu.com/u/123a20a96441">简书</a><a class="author-info-links__name text-center" href="https://weibo.com/coolqiLi">微博</a></div></div></div><nav id="nav" style="background-image: url(https://ws1.sinaimg.cn/large/8700af19ly1fvpabr30o6j22yo1o0q7i.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/">Coolqi`s Blog</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus"><a class="site-page social-icon search"><i class="fa fa-search"></i><span> 搜索</span></a><a class="site-page" href="/">Home</a><a class="site-page" href="/categories">Categories</a><a class="site-page" href="/tags">Tags</a><a class="site-page" href="/about">About</a><a class="site-page" href="/archives">Archives</a></span></div><div id="site-info"><div id="site-title">Coolqi`s Blog</div><div id="site-sub-title">Every day is always sleepy.</div><div id="site-social-icons"><a class="social-icon" href="https://weibo.com/coolqiLi"><i class="fa fa-weibo"></i></a><a class="social-icon" href="https://Molunerfinn/atom.xml"><i class="fa fa-rss"></i></a><a class="social-icon search"><i class="fa fa-search"></i></a></div></div></nav><div id="sidebar"><div class="author-info"><div class="author-info__avatar text-center"><img src="/img/avatar.png"></div><div class="author-info__name text-center">Coolqi.Li</div><div class="author-info__description text-center">“你好，我是李帅奇，Android 系统工程师，MineCraft 忠实玩家，设计和绘画爱好者，缺妹纸晚期患者，熬夜星人。”</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/archives"><span class="pull-left">文章</span><span class="pull-right">64</span></a><a class="author-info-articles__tags article-meta" href="/tags"><span class="pull-left">标签</span><span class="pull-right">14</span></a><a class="author-info-articles__categories article-meta" href="/categories"><span class="pull-left">分类</span><span class="pull-right">15</span></a></div><hr><div class="author-info-links"><div class="author-info-links__title text-center">Links</div><a class="author-info-links__name text-center" href="https://developer.android.google.cn/">AndroidDeveloper</a><a class="author-info-links__name text-center" href="http://www.android-studio.org/">AndroidStudio</a><a class="author-info-links__name text-center" href="https://www.jianshu.com/u/123a20a96441">简书</a><a class="author-info-links__name text-center" href="https://weibo.com/coolqiLi">微博</a></div></div></div><div id="content-outer"><div class="layout" id="content-inner"><article id="page"><h1>关于</h1><div class="article-container"><blockquote>
+<p>关于博客</p>
+</blockquote>
+<p>写博客的目的很简单，总结自己的所学，记录自己的成长！</p>
+<blockquote>
+<p>关于我</p>
+</blockquote>
+<p>李帅奇，Android 系统工程师，我的 Email：<a href="mailto:lsq1968872434@gmail.com" target="_blank" rel="noopener">lsq1968872434@gmail.com</a></p>
+<blockquote>
+<p>写作计划</p>
+</blockquote>
+<p>Java 设计模式 算法 数据结构<br>Android Framework 源码分析<br>第三放开源库<br>Linux…</p>
+<blockquote>
+<p>座右铭</p>
+</blockquote>
+<p>生命不息，折腾不止，且行且珍惜！</p>
+</div></article><nav id="pagination"><div class="pagination"></div></nav><div id="gitalk-container"></div><script>var gitalk = new Gitalk({
+  clientID: '2cd8921819db714376b8',
+  clientSecret: '94b82090448833d5295bc0d210f9f0719b2f124d',
+  repo: 'single-li.github.io',
+  owner: 'single-li',
+  admin: 'single-li',
+  id: md5(location.pathname),
+  language: 'zh-CN'
+})
+gitalk.render('gitalk-container')</script></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2015 - 2019 By Coolqi.Li</div><div class="framework-info"><span>驱动 - </span><a href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 - </span><a href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">Hi, welcome to my <a href="https://coolqi.top/">blog</a>!</div><div class="busuanzi"><script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_site_uv"><i class="fa fa-user"></i><span id="busuanzi_value_site_uv"></span><span></span></span><span class="footer-separator">|</span><span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i><span id="busuanzi_value_site_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="/js/third-party/anime.min.js"></script><script src="/js/third-party/jquery.min.js"></script><script src="/js/third-party/jquery.fancybox.min.js"></script><script src="/js/third-party/velocity.min.js"></script><script src="/js/third-party/velocity.ui.min.js"></script><script src="/js/utils.js?version=1.5.6"></script><script src="/js/fancybox.js?version=1.5.6"></script><script src="/js/sidebar.js?version=1.5.6"></script><script src="/js/copy.js?version=1.5.6"></script><script src="/js/fireworks.js?version=1.5.6"></script><script src="/js/transition.js?version=1.5.6"></script><script src="/js/scroll.js?version=1.5.6"></script><script src="/js/head.js?version=1.5.6"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
   }
-  .gallery-item {
-    width: calc(50% - 22px);
-    height: 6rem;
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
   }
-  .gallery-item__title {
-    transform: translate3d(0, 6rem, 0);
-  }
-  .gallery-item:hover .gallery-item__title {
-    transform: translate3d(0, 4.5rem, 0);
-  }
-}
-@media screen and (min-width: $md) {
-  .gallery-item {
-    width: 8rem;
-    height: 8rem;
-  }
-  .gallery-item__title {
-    transform: translate3d(0, 8rem, 0);
-  }
-  .gallery-item:hover .gallery-item__title {
-    transform: translate3d(0, 6.5rem, 0);
-  }
-}
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script src="/js/search/local-search.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"live2d-widget-model-hijiki"},"display":{"position":"right","width":110,"height":220},"mobile":{"show":false},"log":false});</script></body></html>
