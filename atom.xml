@@ -18,8 +18,8 @@
   
   <entry>
     <title>EventBus 第三篇 - 初始化、注册和取消注册</title>
-    <link href="https://coolqi.top/2019/09/10/Eventbus-3-initAndregisterAndUnregister/"/>
-    <id>https://coolqi.top/2019/09/10/Eventbus-3-initAndregisterAndUnregister/</id>
+    <link href="https://coolqi.top/2019/09/10/Eventbus-3-getDefaultAndRegister/"/>
+    <id>https://coolqi.top/2019/09/10/Eventbus-3-getDefaultAndRegister/</id>
     <published>2019-09-10T12:46:25.000Z</published>
     <updated>2019-09-16T14:13:10.000Z</updated>
     
