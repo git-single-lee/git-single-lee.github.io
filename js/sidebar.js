@@ -5,6 +5,7 @@ $(function () {
     $(this).text(toggleText)
     changeSideBarInfo()
   })
+  $(this).addClass('on')
   $('#toggle-sidebar').on('click', function () {
     if (!isMobile() && $('#sidebar').is(':visible')) {
       var isOpen = $(this).hasClass('on')
