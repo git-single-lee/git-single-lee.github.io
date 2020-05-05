@@ -148,7 +148,7 @@ table td {
 @media screen and (max-width: 1024px) {
   i#toggle-sidebar,
   #sidebar {
-    display: none;
+    display: block;
   }
   body {
     padding-left: 0 !important;
@@ -1568,7 +1568,7 @@ a.fancybox:focus {
   background: #49b1f5;
 }
 #sidebar .author-info.hide {
-  display: none;
+  display: block;
 }
 #sidebar .author-info__avatar {
   margin: 0 auto;
