@@ -1660,11 +1660,11 @@ a.fancybox:focus {
   overflow: hidden;
 }
 #sidebar .sidebar-toc ol {
-  display: block;
   margin-top: 0.2rem;
   padding-left: 0.4rem;
 }
 #sidebar .sidebar-toc__title {
+  display: block;
   padding-right: 0.5rem;
   text-align: center;
   font-size: 18px;
@@ -1690,6 +1690,7 @@ a.fancybox:focus {
   transition: all 0.2s ease-in-out;
 }
 #sidebar .sidebar-toc .toc-link.active {
+  display: block;
   border-right-color: #000;
   background: #000;
   color: #fff;
