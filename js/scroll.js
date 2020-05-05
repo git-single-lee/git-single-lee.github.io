@@ -1,7 +1,6 @@
 $(function () {
   var initTop = 0
-  // default hide child!
-  //$('.toc-child').hide()
+  $('.toc-child').hide()
 
   // main of scroll
   $(window).scroll(throttle(function (event) {
@@ -81,6 +80,9 @@ $(function () {
 
   // expand toc-item
   function expandToc ($item) {
+    if ($item.is(':visible')) {
+      return
+    }
     $item.velocity('stop').velocity('transition.fadeIn', {
       duration: 500,
       easing: 'easeInQuart'
@@ -93,7 +95,9 @@ $(function () {
     var contentMath = (docHeight > winHeight) ? (docHeight - winHeight) : ($(document).height() - winHeight)
     var scrollPercent = (currentTop) / (contentMath)
     var scrollPercentRounded = Math.round(scrollPercent * 100)
-    var percentage = (scrollPercentRounded > 100) ? 100 : scrollPercentRounded
+    var percentage = (scrollPercentRounded > 100) ? 100
+      : (scrollPercentRounded <= 0) ? 0
+        : scrollPercentRounded
     $('.progress-num').text(percentage)
     $('.sidebar-toc__progress-bar').velocity('stop')
       .velocity({
@@ -111,6 +115,9 @@ $(function () {
   }
 
   // find head position & add active class
+  // DOM Hierarchy:
+  // ol.toc > (li.toc-item, ...)
+  // li.toc-item > (a.toc-link, ol.toc-child > (li.toc-item, ...))
   function findHeadPosition (top) {
     // assume that we are not in the post page if no TOC link be found,
     // thus no need to update the status
@@ -118,10 +125,6 @@ $(function () {
       return false
     }
 
-    if (top < 200) {
-      //$('.toc-link').removeClass('active')
-      //$('.toc-child').hide()
-    }
     var list = $('#post-content').find('h1,h2,h3,h4,h5,h6')
     var currentId = ''
     list.each(function () {
@@ -130,6 +133,12 @@ $(function () {
         currentId = '#' + $(this).attr('id')
       }
     })
+
+    if (currentId === '') {
+      $('.toc-link').removeClass('active')
+      $('.toc-child').hide()
+    }
+
     var currentActive = $('.toc-link.active')
     if (currentId && currentActive.attr('href') !== currentId) {
       updateAnchor(currentId)
@@ -137,20 +146,19 @@ $(function () {
       $('.toc-link').removeClass('active')
       var _this = $('.toc-link[href="' + currentId + '"]')
       _this.addClass('active')
+
       var parents = _this.parents('.toc-child')
-      if (parents.length > 0) {
-        var child
-        parents.length > 1 ? child = parents.eq(parents.length - 1).find('.toc-child') : child = parents
-        if (child.length > 0 && child.is(':hidden')) {
-          expandToc(child)
-        }
-        //parents.eq(parents.length - 1).closest('.toc-item').siblings('.toc-item').find('.toc-child').hide()
-      } else {
-        if (_this.closest('.toc-item').find('.toc-child').is(':hidden')) {
-          expandToc(_this.closest('.toc-item').find('.toc-child'))
-        }
-        //_this.closest('.toc-item').siblings('.toc-item').find('.toc-child').hide()
-      }
+      // Returned list is in reverse order of the DOM elements
+      // Thus `parents.last()` is the outermost .toc-child container
+      // i.e. list of subsections
+      var topLink = (parents.length > 0) ? parents.last() : _this
+      expandToc(topLink.closest('.toc-item').find('.toc-child'))
+      topLink
+        // Find all top-level .toc-item containers, i.e. sections
+        // excluding the currently active one
+        .closest('.toc-item').siblings('.toc-item')
+        // Hide their respective list of subsections
+        .find('.toc-child').hide()
     }
   }
 })

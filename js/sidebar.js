@@ -5,12 +5,11 @@ $(function () {
     $(this).text(toggleText)
     changeSideBarInfo()
   })
-  $(this).addClass('on')
   $('#toggle-sidebar').on('click', function () {
     if (!isMobile() && $('#sidebar').is(':visible')) {
       var isOpen = $(this).hasClass('on')
       isOpen ? $(this).removeClass('on') : $(this).addClass('on')
-      if (isOpen) { // open to close!
+      if (isOpen) {
         $('#page-header').removeClass('open-sidebar')
         $('body').velocity('stop').velocity({
           paddingLeft: '0px'
@@ -28,7 +27,7 @@ $(function () {
         }, {
           duration: 200
         })
-      } else { // close to open!
+      } else {
         $('#page-header').addClass('open-sidebar')
         $('body').velocity('stop').velocity({
           paddingLeft: '400px'
