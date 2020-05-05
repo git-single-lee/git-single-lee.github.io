@@ -148,7 +148,7 @@ table td {
 @media screen and (max-width: 1024px) {
   i#toggle-sidebar,
   #sidebar {
-    display: block;
+    display: none;
   }
   body {
     padding-left: 0 !important;
@@ -1534,7 +1534,7 @@ a.fancybox:focus {
   padding-right: 0.5rem;
 }
 #sidebar .toggle-sidebar-info span {
-  display: block;
+  display: inline-block;
   padding: 0 0.6rem;
   height: 1.6rem;
   background: #000;
@@ -1568,7 +1568,7 @@ a.fancybox:focus {
   background: #49b1f5;
 }
 #sidebar .author-info.hide {
-  display: block;
+  display: none;
 }
 #sidebar .author-info__avatar {
   margin: 0 auto;
@@ -1660,6 +1660,7 @@ a.fancybox:focus {
   overflow: hidden;
 }
 #sidebar .sidebar-toc ol {
+  display: block;
   margin-top: 0.2rem;
   padding-left: 0.4rem;
 }
@@ -1690,7 +1691,6 @@ a.fancybox:focus {
   transition: all 0.2s ease-in-out;
 }
 #sidebar .sidebar-toc .toc-link.active {
-  display: block;
   border-right-color: #000;
   background: #000;
   color: #fff;
