@@ -1534,7 +1534,7 @@ a.fancybox:focus {
   padding-right: 0.5rem;
 }
 #sidebar .toggle-sidebar-info span {
-  display: inline-block;
+  display: block;
   padding: 0 0.6rem;
   height: 1.6rem;
   background: #000;
@@ -1655,10 +1655,12 @@ a.fancybox:focus {
 }
 #sidebar .sidebar-toc ol,
 #sidebar .sidebar-toc li {
+  display: block;
   list-style: none;
   overflow: hidden;
 }
 #sidebar .sidebar-toc ol {
+  display: block;
   margin-top: 0.2rem;
   padding-left: 0.4rem;
 }
