@@ -1,6 +1,6 @@
 $(function () {
   var initTop = 0
-  // $('.toc-child').hide()
+  // $('.toc-child').hide()  默认展开
 
   // main of scroll
   $(window).scroll(throttle(function (event) {
@@ -136,7 +136,7 @@ $(function () {
 
     if (currentId === '') {
       $('.toc-link').removeClass('active')
-      // $('.toc-child').hide()
+      // $('.toc-child').hide() 默认展开
     }
 
     var currentActive = $('.toc-link.active')
@@ -158,7 +158,7 @@ $(function () {
         // excluding the currently active one
         .closest('.toc-item').siblings('.toc-item')
         // Hide their respective list of subsections
-        // .find('.toc-child').hide()
+        // .find('.toc-child').hide()  默认展开
     }
   }
 })
