@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lishuaiqi.top/"/>
-  <updated>2020-05-07T16:23:56.367Z</updated>
+  <updated>2020-05-07T16:28:36.521Z</updated>
   <id>https://lishuaiqi.top/</id>
   
   <author>
@@ -20,8 +20,8 @@
     <title></title>
     <link href="https://lishuaiqi.top/2020/05/08/ViewDraw-6-draw/"/>
     <id>https://lishuaiqi.top/2020/05/08/ViewDraw-6-draw/</id>
-    <published>2020-05-07T16:17:27.341Z</published>
-    <updated>2020-05-07T16:23:56.367Z</updated>
+    <published>2020-05-07T16:27:59.000Z</published>
+    <updated>2020-05-07T16:28:36.521Z</updated>
     
     <content type="html"><![CDATA[<h1 id="ViewDraw-第六篇-draw-流程分析"><a href="#ViewDraw-第六篇-draw-流程分析" class="headerlink" title="ViewDraw 第六篇 draw 流程分析"></a>ViewDraw 第六篇 draw 流程分析</h1><p>title: ViewDraw 第六篇 draw 流程分析<br>date: 2020/04/21 20:46:25<br>catalog: true<br>categories: </p><ul><li>View 视图</li><li>View 的加载和绘制</li></ul><p>tags: ViewDraw<br>copyright: true</p><p>基于 Android N 分析下 View 的 draw ，N 虽然看起来略有些旧，但是框架的核心思想才是最重要的，新的一天开始了。</p><h1 id="1-回顾"><a href="#1-回顾" class="headerlink" title="1 回顾"></a>1 回顾</h1><p>等待更新～</p>]]></content>
     
