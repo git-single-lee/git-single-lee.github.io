@@ -162,7 +162,7 @@ table td {
   padding-top: 1.4rem;
   background: #292d3e;
   color: #a6accd;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 20px;
 }
 figure.highlight {
@@ -183,7 +183,7 @@ blockquote {
   background: rgba(27,31,35,0.05);
   color: #1f2d3d;
   word-wrap: break-word;
-  font-size: 14px;
+  font-size: 12px;
 }
 .article-container pre code {
   padding: 0;
