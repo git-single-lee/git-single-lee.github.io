@@ -1504,10 +1504,10 @@ a.fancybox:focus {
 }
 @media screen and (min-width: 1300px) {
   .layout {
-    width: 1200px;
+    width: 1000px;
   }
   .recent-post-item .content iframe {
-    width: 1200px;
+    width: 1000px;
     height: 506.25px;
   }
 }
