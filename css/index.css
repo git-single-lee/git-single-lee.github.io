@@ -764,7 +764,7 @@ footer.is-mobile {
   word-break: break-word;
 }
 .recent-post-item .content iframe {
-  width: 1200px;
+  width: 900px;
   height: 393.75px;
 }
 .recent-post-item .article-type {
@@ -1160,7 +1160,7 @@ footer.is-mobile {
 }
 .layout {
   margin: 0 auto;
-  width: 1200px;
+  width: 900px;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -1504,10 +1504,10 @@ a.fancybox:focus {
 }
 @media screen and (min-width: 1300px) {
   .layout {
-    width: 900px;
+    width: 1200px;
   }
   .recent-post-item .content iframe {
-    width: 900px;
+    width: 1200px;
     height: 506.25px;
   }
 }
