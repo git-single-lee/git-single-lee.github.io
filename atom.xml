@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lishuaiqi.top/"/>
-  <updated>2020-05-07T16:30:00.262Z</updated>
+  <updated>2020-05-09T18:56:42.871Z</updated>
   <id>https://lishuaiqi.top/</id>
   
   <author>
@@ -15,34 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>ViewDraw 第六篇 draw 流程分析</title>
-    <link href="https://lishuaiqi.top/2020/04/21/ViewDraw-6-draw/"/>
-    <id>https://lishuaiqi.top/2020/04/21/ViewDraw-6-draw/</id>
-    <published>2020-04-21T12:46:25.000Z</published>
-    <updated>2020-05-07T16:30:00.262Z</updated>
-    
-    <content type="html"><![CDATA[<p>基于 Android N 分析下 View 的 draw ，N 虽然看起来略有些旧，但是框架的核心思想才是最重要的，新的一天开始了。</p><h1 id="1-回顾"><a href="#1-回顾" class="headerlink" title="1 回顾"></a>1 回顾</h1><p>等待更新～</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;基于 Android N 分析下 View 的 draw ，N 虽然看起来略有些旧，但是框架的核心思想才是最重要的，新的一天开始了。&lt;/p&gt;
-&lt;h1 id=&quot;1-回顾&quot;&gt;&lt;a href=&quot;#1-回顾&quot; class=&quot;headerlink&quot; title=&quot;1 回顾&quot;&gt;&lt;/a&gt;
-      
-    
-    </summary>
-    
-      <category term="View 视图" scheme="https://lishuaiqi.top/categories/View-%E8%A7%86%E5%9B%BE/"/>
-    
-      <category term="View 的加载和绘制" scheme="https://lishuaiqi.top/categories/View-%E8%A7%86%E5%9B%BE/View-%E7%9A%84%E5%8A%A0%E8%BD%BD%E5%92%8C%E7%BB%98%E5%88%B6/"/>
-    
-    
-      <category term="ViewDraw" scheme="https://lishuaiqi.top/tags/ViewDraw/"/>
-    
-  </entry>
   
   <entry>
     <title>ViewDraw 第五篇 layout 流程分析</title>
@@ -59,6 +31,34 @@
       
         &lt;p&gt;基于 Android N 分析下 View 的 layout，N 虽然看起来略有些旧，但是框架的核心思想才是最重要的，新的一天开始了。&lt;/p&gt;
 &lt;h1 id=&quot;1-回顾&quot;&gt;&lt;a href=&quot;#1-回顾&quot; class=&quot;headerlink&quot; title=&quot;1 回顾&quot;&gt;&lt;/a
+      
+    
+    </summary>
+    
+      <category term="View 视图" scheme="https://lishuaiqi.top/categories/View-%E8%A7%86%E5%9B%BE/"/>
+    
+      <category term="View 的加载和绘制" scheme="https://lishuaiqi.top/categories/View-%E8%A7%86%E5%9B%BE/View-%E7%9A%84%E5%8A%A0%E8%BD%BD%E5%92%8C%E7%BB%98%E5%88%B6/"/>
+    
+    
+      <category term="ViewDraw" scheme="https://lishuaiqi.top/tags/ViewDraw/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ViewDraw 第六篇 draw 流程分析</title>
+    <link href="https://lishuaiqi.top/2020/04/21/ViewDraw-6-draw/"/>
+    <id>https://lishuaiqi.top/2020/04/21/ViewDraw-6-draw/</id>
+    <published>2020-04-21T12:46:25.000Z</published>
+    <updated>2020-05-07T16:30:00.262Z</updated>
+    
+    <content type="html"><![CDATA[<p>基于 Android N 分析下 View 的 draw ，N 虽然看起来略有些旧，但是框架的核心思想才是最重要的，新的一天开始了。</p><h1 id="1-回顾"><a href="#1-回顾" class="headerlink" title="1 回顾"></a>1 回顾</h1><p>等待更新～</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;基于 Android N 分析下 View 的 draw ，N 虽然看起来略有些旧，但是框架的核心思想才是最重要的，新的一天开始了。&lt;/p&gt;
+&lt;h1 id=&quot;1-回顾&quot;&gt;&lt;a href=&quot;#1-回顾&quot; class=&quot;headerlink&quot; title=&quot;1 回顾&quot;&gt;&lt;/a&gt;
       
     
     </summary>
