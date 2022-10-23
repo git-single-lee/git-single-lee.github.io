@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lishuaiqi.top/"/>
-  <updated>2022-10-23T11:06:49.654Z</updated>
+  <updated>2022-10-23T11:41:21.956Z</updated>
   <id>https://lishuaiqi.top/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://lishuaiqi.top/2022/10/13/Shadow-HowToWork/"/>
     <id>https://lishuaiqi.top/2022/10/13/Shadow-HowToWork/</id>
     <published>2022-10-13T12:46:25.000Z</published>
-    <updated>2022-10-23T11:06:49.654Z</updated>
+    <updated>2022-10-23T11:41:21.956Z</updated>
     
-    <content type="html"><![CDATA[<p>上周在团队内部做了一次技术分享，关于 shadow 核心技术原理：</p><p>这里分享出来给大家～～～</p><p>手机端阅读估计有问题，大家可以在电脑端看：</p><div class="row">    <embed src="/pdf/shadow-howtowork.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
+    <content type="html"><![CDATA[<p>上周在团队内部做了一次技术分享，关于 shadow 核心技术原理：</p><p>这里分享出来给大家～～～</p><p>手机端无法在线预览，只能下载；</p><p>大家可以在电脑端看，下面是目录～</p><table><thead><tr><th>目录</th></tr></thead><tbody><tr><td>原理总览</td></tr><tr><td>工程结构</td></tr><tr><td>接口动态化原理</td></tr><tr><td>插件包的组成</td></tr><tr><td>宿主如何启动插件 Activity</td></tr><tr><td>PPS 的作用</td></tr><tr><td>插件独立进程的好处</td></tr><tr><td>同名 View问题和解决方案</td></tr><tr><td>插件 PluginClassLoader 浅析</td></tr><tr><td>插件包名和宿主包名</td></tr><tr><td>插件包的资源</td></tr><tr><td>ShadowContext 代理</td></tr><tr><td>宿主如何启动插件 Service</td></tr><tr><td>宿主如何启动和访问插件 provider</td></tr><tr><td>宿主如何启动和访问插件 receiver</td></tr><tr><td>Gradle Plugin 简析-配置阶段</td></tr><tr><td>Gradle Plugin 简析-Task</td></tr><tr><td>Gradle Plugin 简析- Transformer</td></tr><tr><td>简单的 SpecificTransform</td></tr><tr><td>复杂的 SpecificTransform</td></tr><tr><td>参考文献</td></tr></tbody></table><p>pdf 预览，貌似效果不是很好，后面转成图片吧。</p><div class="row">    <embed src="/pdf/shadow-howtowork.pdf" width="100%" height="550" type="application/pdf"></div>]]></content>
     
     <summary type="html">
     
@@ -31,11 +31,12 @@
       
         &lt;p&gt;上周在团队内部做了一次技术分享，关于 shadow 核心技术原理：&lt;/p&gt;
 &lt;p&gt;这里分享出来给大家～～～&lt;/p&gt;
-&lt;p&gt;手机端阅读估计有问题，大家可以在电脑端看：&lt;/p&gt;
-
-
-	&lt;div class=&quot;row&quot;&gt;
-    &lt;embed src=&quot;/pdf/shadow-h
+&lt;p&gt;手机端无法在线预览，只能下载；&lt;/p&gt;
+&lt;p&gt;大家可以在电脑端看，下面是目录～&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;目录&lt;/th&gt;
       
     
     </summary>
